@@ -74,7 +74,7 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query:
-            music_dir = 'D:\\py_projects\\deskassist\\music'
+            music_dir = 'PATH TO MUISC DIRECTORY'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -83,8 +83,8 @@ if __name__ == "__main__":
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is {strTime}")
 
-        elif 'open virtualbox' in query:
-            path = 'C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox.exe'
+        elif 'open code' in query:
+            path = '"C:\\Users\\miita\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"'
             os.startfile(path)
 
         elif 'email to friend' in query:
